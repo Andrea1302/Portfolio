@@ -1,0 +1,58 @@
+.aboutme{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 120px;
+    // overflow: scroll;
+    .descrizione{
+        width: 60%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 59px;
+        // overflow-y: scroll;
+        /* Purple 10 */
+        color: #5375F6;
+        .download{
+            margin-top: 64px;
+            font-size: 24px;
+            a{
+                color: #5375F6;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .img_mia{
+        width: 40%;
+        background: rgb(83,117,246);
+        background: linear-gradient(0deg, rgba(83,117,246,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(83,117,246,1) 100%);
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+@media all and (max-width:1200px){
+    .aboutme{
+        flex-direction: column;
+        padding: 120px 0;
+        .descrizione{
+            width: 100%;
+            padding: 0 120px;
+            font-size: 3rem;
+        }
+        .img_mia{
+            width: 100%;
+            background:linear-gradient(0deg, #5375f6, transparent);
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

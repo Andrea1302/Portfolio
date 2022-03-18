@@ -1,0 +1,53 @@
+#progetti{
+    background-image: url(/storage/img/mask.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    color: white;
+    font-family: 'Unica One';
+    h1{
+        font-size: 4rem;
+    }
+    .project_container{
+        display: flex;
+        align-items: center;
+        margin-top: 64px;
+        .img_project{
+            width: 65%;
+            box-shadow: 0px 0px 10px 0px white;
+            overflow-y: hidden;
+            img{
+                width: 100%;
+                max-height: 400px;
+            }
+        }
+        
+        .descrizione_progetto{
+            width: 35%;
+            padding: 60px 0 60px 60px;
+            font-family: 'Montserrat', sans-serif;
+            p{
+                margin: 32px 0;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .descrizione_progetto_second{
+            width: 35%;
+            padding: 60px  60px 60px 0;
+            font-family: 'Montserrat', sans-serif;
+            p{
+                margin: 32px 0;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+

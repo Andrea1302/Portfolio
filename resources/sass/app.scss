@@ -1,0 +1,209 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Shalimar&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// About me 
+@import 'partials/aboutme';
+
+
+// Progetti 
+@import 'partials/progetti';
+
+// skills
+@import 'partials/skills';
+
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+// Homepage
+#homepage{
+    #jumbotron{
+        animation-name: jumbotron;
+        animation-duration: 2500ms;
+        position: relative;
+        height: 100vh;
+        background-color: #CFF43B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // overflow-y: scroll;
+    }
+    #jumbotron_created{
+        height: 100vh;
+        background-color: #3F36C1;
+        padding: 48px 0;
+        color: white;
+        position: relative;
+        // overflow-y: scroll;
+        .scroll{
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            left: 0;
+            .go_down{
+                color: white;
+                font-size: 40px;
+            }
+        }
+    }
+    .logo{
+        animation-name: logo;
+        animation-duration: 2000ms;
+        z-index: 2;
+    }
+    #circle{
+        animation-name: circle;
+        animation-duration: 1000ms;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        background-color: #3f36c1;
+        width: 250.98px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    
+    nav{
+        a{
+
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    
+    #nav_sx{
+        display: flex;
+        align-items: center;
+        h2{
+            font-family: 'Unica One', cursive;
+            font-size: 40px;
+            margin-left: 7px;
+            margin-bottom: 0;
+        }
+        span#space{
+            margin: 0 7px;
+        }
+        span{
+            font-size: 17px;
+            font-weight: 100;
+        }
+
+    }
+    #nav_dx{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #contattami{
+        background-color: white;
+        color: #3f36c1 ;
+        margin-left: 15px;
+        &:hover{
+            background-color: #CFF43B;
+            color: #3f36c1 ;
+        }
+    }
+    #contact_me_phoneLayout{
+        text-align: end;
+    }
+
+
+    #jumbotext{
+        margin-top: 60px;
+        font-family: 'Unica One', cursive;
+    }
+    #number_row{
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+      
+    
+    // Animazioni created 
+    @keyframes circle {
+        from{
+            transform: scale(1);
+            transform: translate(-50%, -50%);
+        }
+        to {
+            transform: translate(-50%, -50%);
+            transform: scale(10);
+             background-color:#3F36C1 ;
+        }
+    }
+    @keyframes logo {
+        from{
+            transform: scale(0.2);
+           
+        }
+        to {
+            transform: scale(1);
+         
+        }
+    }
+}
+
+
+// media 
+@media all and (max-width:992px){
+    #nav_sx{
+        flex-direction: column;
+        span#space{
+            display: none;
+        }
+        h2{
+            margin: 10px 0;
+        }
+    }
+    #logo_on_desktop{
+        display: none;
+    }
+    #nav_dx{
+        display: none;
+    }
+    #phone_model{
+        width: 100%;
+    }
+}
+.typed-text{
+    font-size: 70px;
+}
+span.cursor {
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 3px;
+    width: 2px;
+    background-color: #fff;
+    animation: cursorBlink 1s infinite;
+  }
+  span.cursor.typing {
+    animation: none;
+  }
+
+  @keyframes cursorBlink {
+    49% { background-color: #fff; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+  }
+@media all and (min-width:992px){
+    #phone_model{
+        display: none;
+    }
+}

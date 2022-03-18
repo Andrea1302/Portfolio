@@ -1,0 +1,36 @@
+#skills{
+    color: #3F36C1;
+    padding: 120px 0;
+    h1{
+        font-size: 4rem;
+    }
+    .skills_slide{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        position:relative;
+        overflow-x: hidden;
+        padding: 32px 0;
+        .card_skill{
+            flex-shrink: 0;
+            flex-grow: 0;
+            box-shadow: 0px 0px 12px 0px #ccc ;
+            padding: 40px 16px;
+            width: 28%;
+            text-align: center;
+            border-radius: 20px;
+            img{
+                width: 80%;
+            }
+            h3{
+                margin-top: 16px;
+            }
+        }
+        .arrow_slide{
+            font-size: 50px;
+            cursor: pointer;
+        }
+    }
+}
